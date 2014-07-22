@@ -1,0 +1,10 @@
+/* HOMEPAGE STLES */
+	
+.main-header-image{
+	background: #FFFFFF  url('../images/DeathtoStock_Wired3.jpg') no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 500px;
+  padding-bottom: 50px;
+}
