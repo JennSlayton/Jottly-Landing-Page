@@ -270,6 +270,102 @@ body {
 		display: inline-block;
 	}
 	
-	
+	@media only screen and (max-width: 479px) {
+	 	header {
+	 		display: block;
+	 	}
+	 	.left-nav li {
+	    display: block;
+	    float: none;
+	    margin-top: 20px;
+	    text-align: center;  
+	  }
+	  .right-nav {
+	  	display: block;
+	  	float: none;
+	  	text-align: center;
+	  	margin: auto;
+	  }
+	  .right-nav li {
+	  	display: block;
+	  }
+	  .main-header {
+	  	padding-top: 70px;
+	  }
+	  .main-header h1 {
+	  	font-size: 35px;
+	  }
+	  .main-header h3 {
+	  	font-size: 20px;
+	  	padding-bottom: 10px;
+	  }
+	  .header-cta .column {
+	  	display: block;
+	  	float: none;
+	  	text-align: center;
+	  }
+	  .header-cta input {
+	  	display: block;
+	  	float: none;
+	  	text-align: center;
+	  }
+	  .info {
+	  	padding: 20px 0 20px 0;
+	  	margin: auto;
+	  	text-align: center;
+	  }
+	  .info h2 {
+	  	padding: 0;
+	  	text-align: center;
+	  }
+	  .info p{
+	  	margin: auto;
+	  	padding-left: 0;
+	  	padding-right: 0;
+	  	text-align: center;
+	  }
+	  .blue-bg {
+	  	height: 175px;
+	  }
+	 	.quote {
+	 		padding: 7px 0;
+	 			 	}
+	  .quote h4 {
+	  	font-size: 20px;
+	  	line-height: 20px;
+	  	padding: 5px;
+	  }
+	 .sign-up input {
+	 	float: none;
+	 	text-align: center;
+	 }
+	 .sign-up .button-orange {
+	 	float: none;
+	 }
+	 .left-footer  {
+	 	display: block;
+	 	float: none;
+	 	padding: 10px;
+	 	text-align: center;
+	 }
+	 .nav-footer {
+	 	float: none;
+	 	padding-left: 10px;
+	 	text-align: center;
+	 }
+	 .nav-icons {
+	 	float: none;
+	 	text-align: center;
+	 	padding: 20px 0px 20px 8px; 
+	 }
+	 .nav-icons li {
+	 	padding: 10px;
+	 }
+	 .footer {
+	 	display: block;
+	 	float: none;
+	 	text-align: center;
+	 }  	
+  }
 
 	
