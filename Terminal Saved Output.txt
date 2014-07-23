@@ -1,0 +1,84 @@
+Last login: Wed Jul 23 00:07:11 on ttys001
+Alexs-MacBook-2:~ sherrillslayton$ git config --global user.name "Jenn Slayton"
+Alexs-MacBook-2:~ sherrillslayton$ git config --global user.email "advoslayton@gmail.com"
+Alexs-MacBook-2:~ sherrillslayton$ cd Dropbox/Jottly_JennSlayton/Projects/"New Jottly"
+Alexs-MacBook-2:New Jottly sherrillslayton$ 
+Alexs-MacBook-2:New Jottly sherrillslayton$ git init
+Reinitialized existing Git repository in /Users/sherrillslayton/Dropbox/Jottly_JennSlayton/Projects/New Jottly/.git/
+Alexs-MacBook-2:New Jottly sherrillslayton$ touch readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ open readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ git status
+# On branch new-branch
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    readme (Autosaved).txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Alexs-MacBook-2:New Jottly sherrillslayton$ git add .
+Alexs-MacBook-2:New Jottly sherrillslayton$ git status
+# On branch new-branch
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    readme (Autosaved).txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Alexs-MacBook-2:New Jottly sherrillslayton$ git commit -m 'first commit'
+# On branch new-branch
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    readme (Autosaved).txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Alexs-MacBook-2:New Jottly sherrillslayton$ open readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ git status
+# On branch new-branch
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    readme (Autosaved).txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Alexs-MacBook-2:New Jottly sherrillslayton$ git add /
+fatal: '/' is outside repository
+Alexs-MacBook-2:New Jottly sherrillslayton$ git add .
+Alexs-MacBook-2:New Jottly sherrillslayton$ git commit -m 'second commit'
+[new-branch 22c849c] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Alexs-MacBook-2:New Jottly sherrillslayton$ git checkout -b new-branch
+fatal: A branch named 'new-branch' already exists.
+Alexs-MacBook-2:New Jottly sherrillslayton$ git status
+# On branch new-branch
+nothing to commit (working directory clean)
+Alexs-MacBook-2:New Jottly sherrillslayton$ open readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ git add .
+Alexs-MacBook-2:New Jottly sherrillslayton$ git commit -m 'Added a line in a new branch'
+# On branch new-branch
+nothing to commit (working directory clean)
+Alexs-MacBook-2:New Jottly sherrillslayton$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	readme (Autosaved).txt
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+Alexs-MacBook-2:New Jottly sherrillslayton$ open readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ git merge new-branch
+Already up-to-date.
+Alexs-MacBook-2:New Jottly sherrillslayton$ git status
+# On branch new-branch
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   readme (Autosaved).txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+Alexs-MacBook-2:New Jottly sherrillslayton$ open readme.txt
+Alexs-MacBook-2:New Jottly sherrillslayton$ git branch -d new-branch
+error: Cannot delete the branch 'new-branch' which you are currently on.
+Alexs-MacBook-2:New Jottly sherrillslayton$ 
